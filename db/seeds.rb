@@ -18,8 +18,7 @@ end
     3.times do
         ingredients << Faker::Food.ingredient
     end
-    Pizza.create(name:ingredients[-], ingredients:
-ingredients.join(", "))
+    Pizza.create(name:ingredients[-1], ingredients: ingredients.join(", "))
 
 end
 
